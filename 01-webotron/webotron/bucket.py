@@ -31,7 +31,7 @@ class BucketManager:
             s3_bucket = self.s3.create_bucket(
                 Bucket=bucket_name,
                 CreateBucketConfiguration={
-                    'LocationConstraint': 'us-east-2'
+                    'LocationConstraint': 'us-west-2'
                 }
             )
         except ClientError as error:
